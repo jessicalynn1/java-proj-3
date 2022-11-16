@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Add a Movie</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<form>
+<form action="addMovie" method="POST">
 
+    <br>
+    <p>Add a new movie here:</p>
+    <br>
 
+    <p>Movie Title: <input type="text" name="movieTitle"/></p>
+    <br>
+
+    <p>Maturity Rating: <input type="text" name="maturityRating"/></p>
+    <br>
+
+    <p>Genre: <input type="text" name="genre"/></p>
+    <br>
+
+    <p><input type="submit" value="Submit"/></p>
 </form>
-
+<br>
+    <a href="/">Click here to return home</a>
+<br>
 </body>
 </html>
